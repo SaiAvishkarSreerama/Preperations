@@ -1,0 +1,25 @@
+using system;
+
+namespace AviPreperation{
+
+abstarct class Shape{
+
+	public abstract int GetSquare();
+
+}
+
+class Square : Shape{
+	int side;
+
+	public Square(int n){
+		side = n;
+	}
+	public override int GetSquare(){
+		return side*side;
+	}
+	static void Main(string[] args){
+		var sq = new Square(12);
+		Console.WriteLine(sq);
+	}
+}
+}

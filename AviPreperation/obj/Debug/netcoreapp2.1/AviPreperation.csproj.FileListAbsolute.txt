@@ -1,0 +1,11 @@
+C:\Users\ss051612\Documents\2. PROJECTS\AviPreperation\AviPreperation\AviPreperation\bin\Debug\netcoreapp2.1\AviPreperation.deps.json
+C:\Users\ss051612\Documents\2. PROJECTS\AviPreperation\AviPreperation\AviPreperation\bin\Debug\netcoreapp2.1\AviPreperation.runtimeconfig.json
+C:\Users\ss051612\Documents\2. PROJECTS\AviPreperation\AviPreperation\AviPreperation\bin\Debug\netcoreapp2.1\AviPreperation.runtimeconfig.dev.json
+C:\Users\ss051612\Documents\2. PROJECTS\AviPreperation\AviPreperation\AviPreperation\bin\Debug\netcoreapp2.1\AviPreperation.dll
+C:\Users\ss051612\Documents\2. PROJECTS\AviPreperation\AviPreperation\AviPreperation\bin\Debug\netcoreapp2.1\AviPreperation.pdb
+C:\Users\ss051612\Documents\2. PROJECTS\AviPreperation\AviPreperation\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.csprojAssemblyReference.cache
+C:\Users\ss051612\Documents\2. PROJECTS\AviPreperation\AviPreperation\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.csproj.CoreCompileInputs.cache
+C:\Users\ss051612\Documents\2. PROJECTS\AviPreperation\AviPreperation\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.AssemblyInfoInputs.cache
+C:\Users\ss051612\Documents\2. PROJECTS\AviPreperation\AviPreperation\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.AssemblyInfo.cs
+C:\Users\ss051612\Documents\2. PROJECTS\AviPreperation\AviPreperation\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.dll
+C:\Users\ss051612\Documents\2. PROJECTS\AviPreperation\AviPreperation\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.pdb
