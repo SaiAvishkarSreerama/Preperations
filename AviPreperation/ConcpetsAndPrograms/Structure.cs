@@ -18,13 +18,13 @@ namespace AviPreperation.ConcpetsAndPrograms
         //Syntax
         //Access_Modifier struct Structure_Name
         //{
-            // Fields 
-            // Parameterized constructor 
-            // Constants 
-            // Properties 
-            // Indexers 
-            // Events 
-            // Methods etc.
+        // Fields 
+        // Parameterized constructor 
+        // Constants 
+        // Properties 
+        // Indexers 
+        // Events 
+        // Methods etc.
         //}
 
         //static void Main()
