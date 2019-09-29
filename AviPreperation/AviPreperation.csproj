@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="LeetCodePrep\3.Hard\" />
+    <Folder Include="LeetCodePrep\2.Medium\" />
+  </ItemGroup>
+
 </Project>
