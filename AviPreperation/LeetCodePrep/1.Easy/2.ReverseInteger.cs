@@ -49,20 +49,36 @@ namespace AviPreperation.LeetCodePrep._1.Easy
     /********Recommended Solution**************/
         public int Reverse1(int x)
         {
-
+            // if x=0 just return 0
             if (x == 0)
                 return 0;
+
+            //checking for negive or positive integer
             bool isGivenIntPositive = x > 0;
+
+            // making x always a positve integer 
+            x = isGivenIntPositive ? x : -x;
             long result = 0;
+
+            //untill x becomes 0
             while (x > 0)
             {
+                //modulus 10 gives the last digit 
                 result = result * 10 + x % 10;
+                // by 10 gives removes the last digit
                 x = x / 10;
 
-                if (result > int.MaxValue) return 0;
+                //as per the question result must lies between -2^31 and 2^31-1
+                if (int.MinValue > result || result > int.MaxValue) return 0;
             }
 
             return (int)(isGivenIntPositive ? result : -result);
         }
     }
 }
+
+/* Notes:
+ * Math.Pow(double x, double y) gives the value of power 2^31 etc
+ * int.MaxValue and int.MinValue is same as
+ * Math.Pow(-2, 31) and Math.Pow(2,31), 32 bit signed integer range
+ * */
