@@ -17,9 +17,9 @@ class Square : Shape{
 	public override int GetSquare(){
 		return side*side;
 	}
-	static void Main(string[] args){
-		var sq = new Square(12);
-		Console.WriteLine(sq);
-	}
+	//static void Main(string[] args){
+	//	var sq = new Square(12);
+	//	Console.WriteLine(sq);
+	//}
 }
 }

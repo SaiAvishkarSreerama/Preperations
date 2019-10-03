@@ -7,19 +7,19 @@ namespace AviPreperation.OopsConcept
     //A class is a user-defined blueprint or prototype from which objects are created
     public class Pets
     {
-        static void Main()
-        {
-            //Instantiating the class
-            Dog puppy = new Dog("Jimmy", 10, "Brown");
-            Console.WriteLine(puppy.ReturnToString());
+        //static void Main()
+        //{
+        //    //Instantiating the class
+        //    Dog puppy = new Dog("Jimmy", 10, "Brown");
+        //    Console.WriteLine(puppy.ReturnToString());
 
-            Cat Tom = new Cat("Tom", 2, "White");
-            Console.WriteLine(Tom.ReturnToString());
+        //    Cat Tom = new Cat("Tom", 2, "White");
+        //    Console.WriteLine(Tom.ReturnToString());
 
-            var breed = new Cat.CatBreed(1, "Bengal Cat");
-            Console.WriteLine(breed.returnBread());
+        //    var breed = new Cat.CatBreed(1, "Bengal Cat");
+        //    Console.WriteLine(breed.returnBread());
 
-        }
+        //}
 
         public class Dog
         {
