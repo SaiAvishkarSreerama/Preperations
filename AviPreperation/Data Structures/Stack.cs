@@ -77,18 +77,18 @@ namespace AviPreperation.Data_Structures
 
     public class StackUsingArray
     {
-        static void Main()
-        {
-            var stack = new Stack(4);
-            stack.Push(10);
-            stack.Push(30);
-            stack.Push(20);
-            stack.Push(90);
+        //static void Main()
+        //{
+        //    var stack = new Stack(4);
+        //    stack.Push(10);
+        //    stack.Push(30);
+        //    stack.Push(20);
+        //    stack.Push(90);
 
-            stack.Pop();
-            stack.Peek();
-            stack.PrintStack();
-        }
+        //    stack.Pop();
+        //    stack.Peek();
+        //    stack.PrintStack();
+        //}
     }
 
     public class StacksLinkedLikst
@@ -147,19 +147,19 @@ namespace AviPreperation.Data_Structures
             else
                 return root.data;
         }
-        public static void Main(String[] args)
-        {
+        //public static void Main(String[] args)
+        //{
 
-            StacksLinkedLikst sll = new StacksLinkedLikst();
+        //    StacksLinkedLikst sll = new StacksLinkedLikst();
 
-            sll.Push(10);
-            sll.Push(20);
-            sll.Push(30);
+        //    sll.Push(10);
+        //    sll.Push(20);
+        //    sll.Push(30);
 
-            Console.WriteLine(sll.Pop() + " popped from stack");
+        //    Console.WriteLine(sll.Pop() + " popped from stack");
 
-            Console.WriteLine("Top element is " + sll.Peek());
-        }
+        //    Console.WriteLine("Top element is " + sll.Peek());
+        //}
     }
 }
 
