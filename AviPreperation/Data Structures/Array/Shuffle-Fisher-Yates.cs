@@ -15,7 +15,7 @@ public class FisherYatesShuffel {
         array[i] = temp;
     }
     
-    public Solution(int[] nums) {
+    public FisherYatesShuffel(int[] nums) {
         array = nums;
         original = (int[])nums.Clone();
     }
@@ -38,7 +38,7 @@ public class FisherYatesShuffel {
 
 /**
  * Your Solution object will be instantiated and called as such:
- * Solution obj = new Solution(nums);
+ * FisherYatesShuffel obj = new FisherYatesShuffel(nums);
  * int[] param_1 = obj.Reset();
  * int[] param_2 = obj.Shuffle();
  */
