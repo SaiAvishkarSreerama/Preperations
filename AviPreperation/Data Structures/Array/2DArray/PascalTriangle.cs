@@ -6,6 +6,8 @@ namespace AviPreperation.Data_Structures.Array._2DArray
 {
     public class Solution
     {
+        //TimeComplexity = O(numRows^2)
+        //SpaceComplexity = O(numRows^2)
         public IList<IList<int>> GeneratePascalTriangle(int numRows)
         {
             //Declaring output list
@@ -42,11 +44,11 @@ namespace AviPreperation.Data_Structures.Array._2DArray
     }
     public class PASCAL
     {
-        static void Main()
-        {
-            var pIndex = new Solution();
-            Console.WriteLine(pIndex.GeneratePascalTriangle(5));
-            Console.ReadLine();
-        }
+        //static void Main()
+        //{
+        //    var pIndex = new Solution();
+        //    Console.WriteLine(pIndex.GeneratePascalTriangle(5));
+        //    Console.ReadLine();
+        //}
     }
 }

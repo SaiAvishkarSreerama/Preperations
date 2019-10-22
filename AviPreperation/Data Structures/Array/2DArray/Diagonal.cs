@@ -77,15 +77,15 @@ public class DiagonalOrderClass
 }
 public class DiagonalOrderMain
 {
-    static void Main()
-    {
-        var pIndex = new DiagonalOrderClass();
-        int[][] Array = new int[3][];
-        Array[0] = new int[] { 1, 2, 3 };
-        Array[1] = new int[] { 4, 5, 6 };
-        Array[2] = new int[] { 7, 8, 9 };
-        //int[] Array = new int[] { -1, -1, -1, 0, 1, 1 };
-        Console.WriteLine(pIndex.FindDiagonalOrder(Array));
-        Console.ReadLine();
-    }
+    //static void Main()
+    //{
+    //    var pIndex = new DiagonalOrderClass();
+    //    int[][] Array = new int[3][];
+    //    Array[0] = new int[] { 1, 2, 3 };
+    //    Array[1] = new int[] { 4, 5, 6 };
+    //    Array[2] = new int[] { 7, 8, 9 };
+    //    //int[] Array = new int[] { -1, -1, -1, 0, 1, 1 };
+    //    Console.WriteLine(pIndex.FindDiagonalOrder(Array));
+    //    Console.ReadLine();
+    //}
 }

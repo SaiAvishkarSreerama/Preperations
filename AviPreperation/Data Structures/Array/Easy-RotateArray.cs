@@ -32,6 +32,7 @@ public class RotateArraySol
         //From the Solution
         //gives the number of rotations required to place the elements
         // if [1,2] requires 2 rotations then no need to rotate because after 2rotations result is still [1,2]
+        var length = nums.Length;
         k %= length;
         int count = 0;
         // looping through the array

@@ -50,12 +50,12 @@ public class SortedSquaresClass
 }
 public class SortedSquaresMain
 {
-    static void Main()
-    {
-        var pIndex = new SortedSquaresClass();
-        int[] Array = new int[] { -4, -1, 0, 1, 9, 12 };
-        Console.WriteLine(pIndex.SortedSquares(Array));
-        Console.ReadLine();
-    }
+    //static void Main()
+    //{
+    //    var pIndex = new SortedSquaresClass();
+    //    int[] Array = new int[] { -4, -1, 0, 1, 9, 12 };
+    //    Console.WriteLine(pIndex.SortedSquares(Array));
+    //    Console.ReadLine();
+    //}
 }
     
