@@ -52,11 +52,11 @@ public  class MinSizeSubarraySumClass
         return ans != int.MaxValue ? ans : 0;
     }
 
-    static void Main()
-    {
-        var pIndex = new DiagonalOrderClass();
-        int[] A  = new int[] { 2,3,1,2,4,3 };
-        Console.WriteLine(MinSubArrayLen(A, 7));
-        Console.ReadLine();
-    }
+    //static void Main()
+    //{
+    //    var pIndex = new DiagonalOrderClass();
+    //    int[] A  = new int[] { 2,3,1,2,4,3 };
+    //    Console.WriteLine(MinSubArrayLen(A, 7));
+    //    Console.ReadLine();
+    //}
 }

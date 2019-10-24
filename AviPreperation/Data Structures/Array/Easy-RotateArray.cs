@@ -27,7 +27,7 @@ public class RotateArraySol
         return nums;
     }
 
-    public int[] Rotate(int[] nums, int k)
+    public int[] Rotate2(int[] nums, int k)
     {
         //From the Solution
         //gives the number of rotations required to place the elements
@@ -68,15 +68,40 @@ public class RotateArraySol
         }
         return nums;
     }
+
+    //Same code with out explanation
+    public int[] Rotate(int[] nums, int k)
+    {
+        int count = 0;
+        int length = nums.Length;
+        k %= length;
+
+        for (int start = 0; count < length; start++)
+        {
+            int current = start;
+            int prev = nums[start];
+
+            do
+            {
+                int next = (current + k) % length;
+                int temp = nums[next];
+                nums[next] = prev;
+                prev = temp;
+                current = next;
+                count++;
+            } while (start != current);
+        }
+        return nums;
+    }
 }
 public class RotateArrayClass
 {
     //static void Main()
     //{
     //    var pIndex = new RotateArraySol();
-    //    int[] Array = new int[] { 1, 7, 3, 6, 5, 6 };
+    //    int[] Array = new int[] { 1, 2, 3, 4, 5, 6, 7 };
     //    //int[] Array = new int[] { -1, -1, -1, 0, 1, 1 };
-    //    Console.WriteLine(pIndex.Rotate(Array, 1));
+    //    Console.WriteLine(pIndex.Rotate(Array, 3));
     //    Console.ReadLine();
     //}
 }
