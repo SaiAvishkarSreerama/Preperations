@@ -6,6 +6,8 @@ namespace AviPreperation.LeetCodePrep._1.Easy
 {
     public class Solution
     {
+        //Time Complexity - O(n) - we traverse all charactersof a string only once
+        //Space Complexity - O(n) - we used stack to push, pop hte string characters
         public bool IsValid(string s)
         {
             var charDict = new Dictionary<char, char>(){

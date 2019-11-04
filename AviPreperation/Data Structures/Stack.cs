@@ -17,6 +17,10 @@ namespace AviPreperation.Data_Structures
             top = -1;
         }
 
+        public Stack()
+        {
+        }
+
         public void Push(int item)
         {
             if (top == max - 1)
