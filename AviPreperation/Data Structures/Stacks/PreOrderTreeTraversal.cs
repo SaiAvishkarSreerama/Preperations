@@ -74,23 +74,22 @@ namespace AviPreperation.Data_Structures.Stacks
             if (root == null)
                 return list;
 
-            TreeNode cur = root;
 
-            while (cur != null || stack.Count > 0)
+            while (root != null || stack.Count > 0)
             {
                 //left
-                while (cur != null)
+                while (root != null)
                 {
-                    stack.Push(cur);
-                    cur = cur.left;
+                    stack.Push(root);
+                    root = root.left;
                 }
 
                 //root
-                cur = (TreeNode)stack.Pop();
-                list.Add(cur.val);
+                root = (TreeNode)stack.Pop();
+                list.Add(root.val);
 
                 //right
-                cur = cur.right;
+                root = root.right;
             }
             return list;
         }
