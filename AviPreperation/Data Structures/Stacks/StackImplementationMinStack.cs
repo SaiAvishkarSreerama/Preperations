@@ -95,34 +95,34 @@ namespace AviPreperation.Data_Structures.Stacks
         //    return min[tailMin];
         //}
 
-        public static void Main()
-        {
-            //Your MinStack object will be instantiated and called as such:
-            MinStack minStack = new MinStack();
-            minStack.Push(-2);
-            minStack.Push(0);
-            minStack.Push(-3);
-            Console.WriteLine(minStack.GetMin()); //--> Returns - 3.
-            minStack.Pop();
-            Console.WriteLine(minStack.Top()); //--> Returns 0.
-            Console.WriteLine(minStack.GetMin()); //--> Returns - 2.
+        //public static void Main()
+        //{
+        //    //Your MinStack object will be instantiated and called as such:
+        //    MinStack minStack = new MinStack();
+        //    minStack.Push(-2);
+        //    minStack.Push(0);
+        //    minStack.Push(-3);
+        //    Console.WriteLine(minStack.GetMin()); //--> Returns - 3.
+        //    minStack.Pop();
+        //    Console.WriteLine(minStack.Top()); //--> Returns 0.
+        //    Console.WriteLine(minStack.GetMin()); //--> Returns - 2.
 
 
-            //minStack.Push(int.MaxValue-1);
-            //minStack.Push(int.MaxValue-1);
-            //minStack.Push(int.MaxValue);
-            //Console.WriteLine(minStack.Top());
-            //minStack.Pop();
-            //Console.WriteLine(minStack.GetMin());
-            //minStack.Pop();
-            //minStack.Push(int.MaxValue);
-            //Console.WriteLine(minStack.Top());
-            //Console.WriteLine(minStack.GetMin());
-            //minStack.Push(int.MinValue);
-            //Console.WriteLine(minStack.Top());
-            //Console.WriteLine(minStack.GetMin());
-            //minStack.Pop();
-            //Console.WriteLine(minStack.GetMin());
-        }
+        //    //minStack.Push(int.MaxValue-1);
+        //    //minStack.Push(int.MaxValue-1);
+        //    //minStack.Push(int.MaxValue);
+        //    //Console.WriteLine(minStack.Top());
+        //    //minStack.Pop();
+        //    //Console.WriteLine(minStack.GetMin());
+        //    //minStack.Pop();
+        //    //minStack.Push(int.MaxValue);
+        //    //Console.WriteLine(minStack.Top());
+        //    //Console.WriteLine(minStack.GetMin());
+        //    //minStack.Push(int.MinValue);
+        //    //Console.WriteLine(minStack.Top());
+        //    //Console.WriteLine(minStack.GetMin());
+        //    //minStack.Pop();
+        //    //Console.WriteLine(minStack.GetMin());
+        //}
     }
 }

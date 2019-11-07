@@ -37,10 +37,10 @@ namespace AviPreperation.Data_Structures.Stacks
 
             return stack.Pop();
         }
-        static void Main()
-        {
-            string[] a = new string[] { "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" };
-            EvalRPN(a);
-        }
+        //static void Main()
+        //{
+        //    string[] a = new string[] { "10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+" };
+        //    EvalRPN(a);
+        //}
     }
 }
