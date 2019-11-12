@@ -20,3 +20,13 @@ C:\Users\ss051612\Documents\1. PROJECT STORIES\Preperations\AviPreperation\obj\D
 C:\Users\ss051612\Documents\1. PROJECT STORIES\Preperations\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.AssemblyInfo.cs
 C:\Users\ss051612\Documents\1. PROJECT STORIES\Preperations\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.dll
 C:\Users\ss051612\Documents\1. PROJECT STORIES\Preperations\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.pdb
+C:\Projects\Preperations\AviPreperation\bin\Debug\netcoreapp2.1\AviPreperation.deps.json
+C:\Projects\Preperations\AviPreperation\bin\Debug\netcoreapp2.1\AviPreperation.runtimeconfig.json
+C:\Projects\Preperations\AviPreperation\bin\Debug\netcoreapp2.1\AviPreperation.runtimeconfig.dev.json
+C:\Projects\Preperations\AviPreperation\bin\Debug\netcoreapp2.1\AviPreperation.dll
+C:\Projects\Preperations\AviPreperation\bin\Debug\netcoreapp2.1\AviPreperation.pdb
+C:\Projects\Preperations\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.csprojAssemblyReference.cache
+C:\Projects\Preperations\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.AssemblyInfoInputs.cache
+C:\Projects\Preperations\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.AssemblyInfo.cs
+C:\Projects\Preperations\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.dll
+C:\Projects\Preperations\AviPreperation\obj\Debug\netcoreapp2.1\AviPreperation.pdb

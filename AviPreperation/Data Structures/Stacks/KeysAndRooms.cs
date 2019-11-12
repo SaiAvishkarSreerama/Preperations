@@ -42,20 +42,17 @@ namespace AviPreperation.Data_Structures.Stacks
             }
             return true;
         }
-        static void Main()
-        {
-            List<IList<int>> rooms = new List<IList<int>>()
-            { new List<int> { 2, 3 }
-                ,new List<int> { 2 }
-                ,new List<int> { 3 }
-                ,new List<int> {  } 
-            };
+        //static void Main()
+        //{
+        //    List<IList<int>> rooms = new List<IList<int>>()
+        //    { new List<int> { 2, 3 }
+        //        ,new List<int> { 2 }
+        //        ,new List<int> { 3 }
+        //        ,new List<int> {  } 
+        //    };
 
-            Console.WriteLine(CanVisitAllRooms(rooms));
-            Console.ReadLine();
-
-
-
-        }
+        //    Console.WriteLine(CanVisitAllRooms(rooms));
+        //    Console.ReadLine();
+        //}
     }
 }
