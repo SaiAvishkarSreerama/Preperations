@@ -12,7 +12,10 @@ namespace AviPreperation.Data_Structures.LinkedLists
             public ListNode next;
             public ListNode(int x) { val = x; }
         }
-            public static ListNode ReverseListIteration(ListNode head)
+
+        //TimeComplexity - O(n)
+        //SpaceComplexity - O(1)
+        public static ListNode ReverseListIteration(ListNode head)
         {
             //USING ITERATION
             //To reverse the linked list, we need a head to move to back and back should comes to front
@@ -35,6 +38,8 @@ namespace AviPreperation.Data_Structures.LinkedLists
             return head;
         }
 
+        //TimeComplexity - O(n)
+        //SpaceComplexity - O(n) // for recursion we are creating n stack of lists
         public static ListNode ReverseListRecursion(ListNode head)
         {
             //USING RECURSIVE
@@ -47,16 +52,16 @@ namespace AviPreperation.Data_Structures.LinkedLists
             return p;
         }
 
-        //public static void Main()
-        //{
-        //    ListNode node = new ListNode(1);
-        //    node.next = new ListNode(2);
-        //    node.next.next = new ListNode(3);
-        //    node.next.next.next = new ListNode(4);
-        //    node.next.next.next.next = new ListNode(5);
+        public static void Main()
+        {
+            ListNode node = new ListNode(1);
+            node.next = new ListNode(2);
+            node.next.next = new ListNode(3);
+            node.next.next.next = new ListNode(4);
+            node.next.next.next.next = new ListNode(5);
 
-        //    ReverseListRecursion(node);
-        //}
+            ReverseListRecursion(node);
+        }
 
     }
 }

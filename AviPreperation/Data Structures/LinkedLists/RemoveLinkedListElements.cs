@@ -7,6 +7,9 @@ namespace AviPreperation.Data_Structures.LinkedLists
     
     public class RemoveLinkedListEleSol
     {
+
+        //TimeComplexity - O(n)
+        //SpaceComplexity - O(1)
         public ListNode RemoveElements(ListNode head, int val)
         {
             if (head == null)
