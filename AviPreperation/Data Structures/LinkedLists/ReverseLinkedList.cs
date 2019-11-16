@@ -52,16 +52,16 @@ namespace AviPreperation.Data_Structures.LinkedLists
             return p;
         }
 
-        public static void Main()
-        {
-            ListNode node = new ListNode(1);
-            node.next = new ListNode(2);
-            node.next.next = new ListNode(3);
-            node.next.next.next = new ListNode(4);
-            node.next.next.next.next = new ListNode(5);
+        //public static void Main()
+        //{
+        //    ListNode node = new ListNode(1);
+        //    node.next = new ListNode(2);
+        //    node.next.next = new ListNode(3);
+        //    node.next.next.next = new ListNode(4);
+        //    node.next.next.next.next = new ListNode(5);
 
-            ReverseListRecursion(node);
-        }
+        //    ReverseListRecursion(node);
+        //}
 
     }
 }
