@@ -92,7 +92,7 @@ namespace AviPreperation.Data_Structures.String
         //{
         //    string t = "aabaaabaaac";
         //    string s = "aabaaac";
-        //    var x = StrStr(t,s);
+        //    var x = StrStr(t, s);
         //    Console.WriteLine(x);
         //    Console.ReadLine();
         //}
