@@ -4,9 +4,11 @@ using System.Text;
 
 namespace AviPreperation.Data_Structures.HashTable
 {
-    class GroupOfIsomorphicString
+    class GroupOfIsomorphicStringSol
     {
-        public static List<List<string>> GroupOdIsomorphicString(string[] s)
+        //TimeComplexity = O(n * m) n-no of strings, m-no of characters of each string
+        //Space Complexity = O(1)
+        public static List<List<string>> GroupOfIsomorphicString(string[] s)
         {
             //creating a return object 
             Dictionary<string, List<string>> d = new Dictionary<string, List<string>>();
@@ -54,10 +56,10 @@ namespace AviPreperation.Data_Structures.HashTable
             return sb.ToString();
         }
 
-        public static void Main()
-        {
-            string[] s = new string[] { "aab", "xxy", "xyz", "abc", "def", "xyx" };
-            GroupOdIsomorphicString(s);
-        }
+        //public static void Main()
+        //{
+        //    string[] s = new string[] { "aab", "xxy", "xyz", "abc", "def", "xyx" };
+        //    GroupOfIsomorphicString(s);
+        //}
     }
 }
