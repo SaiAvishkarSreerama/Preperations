@@ -24,7 +24,7 @@ using System.Text;
 //Merge Sort        Ω(n log(n))     θ(n log(n))         O(n log(n))
 //Bucket Sort       Ω(n+k)          θ(n+k)              O(n^2)
 //Radix Sort        Ω(nk)           θ(nk)               O(nk)
-namespace AviPreperation.Data_Structures.Array.Sort
+namespace AviPreperation.Data_Structures.Array.Sorting
 {
     // Time Complextiy O(n^2)
     // Space Complexity O(1)

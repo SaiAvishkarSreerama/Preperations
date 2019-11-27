@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AviPreperation.Data_Structures.Array.Sort
+namespace AviPreperation.Data_Structures.Array.Sorting
 {
     // Best Case - Array is already Sorted - Time Complexity O(n)
     // Avg Case - Array is not Sorted - Time Complexity O(n^2) 

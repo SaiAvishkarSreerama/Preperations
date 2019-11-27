@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AviPreperation.Data_Structures.Array.Sort
+namespace AviPreperation.Data_Structures.Array.Sorting
 {
     class QuickSortSol
     {

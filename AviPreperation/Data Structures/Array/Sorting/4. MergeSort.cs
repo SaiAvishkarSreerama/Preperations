@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AviPreperation.Data_Structures.Array.Sort
+namespace AviPreperation.Data_Structures.Array.Sorting
 {
     //Time Complexity - O(n logn)
     //Space Complexity - O(n) - uses L and R of n/2 size temp arrays
