@@ -62,18 +62,18 @@ namespace AviPreperation.Data_Structures.Array
             return result;
         }
 
-        static void Main()
-        {
-            int[] A = new int[] { 1, 2 };
-            int[] B = new int[] { -1,-2 };
-            int[] C = new int[] { -1, 2 };
-            int[] D = new int[] { 0, 2 };
-            var FourSum = new _4SumII();
+        //static void Main()
+        //{
+        //    int[] A = new int[] { 1, 2 };
+        //    int[] B = new int[] { -1,-2 };
+        //    int[] C = new int[] { -1, 2 };
+        //    int[] D = new int[] { 0, 2 };
+        //    var FourSum = new _4SumII();
 
-            var result = FourSum.FourSumCount(A, B, C, D);
+        //    var result = FourSum.FourSumCount(A, B, C, D);
 
-            Console.WriteLine(result);
-            Console.ReadLine();           
-        }
+        //    Console.WriteLine(result);
+        //    Console.ReadLine();           
+        //}
     }
 }
