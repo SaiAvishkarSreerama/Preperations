@@ -14,6 +14,9 @@ namespace AviPreperation.Data_Structures.LinkedLists
  *     public ListNode(int x) { val = x; }
  * }
  */
+
+        //TimeComplexity - O(m+n), m = length l1, n = length l2
+        //SpaceComplexity - O(1) 
         public ListNode MergeTwoLists(ListNode l1, ListNode l2)
         {
             if (l1 == null)
@@ -38,14 +41,17 @@ namespace AviPreperation.Data_Structures.LinkedLists
                 }
                 cur = cur.next;
             }
-            if (l1 == null)
-            {
-                cur.next = l2;
-            }
-            if (l2 == null)
-            {
-                cur.next = l1;
-            }
+
+            //if (l1 == null)
+            //{
+            //    cur.next = l2;
+            //}
+            //if (l2 == null)
+            //{
+            //    cur.next = l1;
+            //}
+
+            cur.next = l1 == null ? l2 : l1;
 
             return dummy.next;
         }

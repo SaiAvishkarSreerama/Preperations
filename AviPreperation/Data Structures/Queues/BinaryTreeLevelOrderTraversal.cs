@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
+//Time complexity : O(N) since each node is processed exactly once.
+//Space complexity : O(N) to keep the output structure which contains N node values.
 namespace AviPreperation.Data_Structures.Queues
 {
 //    Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
@@ -30,7 +33,7 @@ namespace AviPreperation.Data_Structures.Queues
 
     public class Solution
     {
-        static IList<IList<int>> LevelOrder(TreeNode root)
+        static IList<IList<int>> LevelOrder_Iterative(TreeNode root)
         {
             List<IList<int>> result = new List<IList<int>>();
             if (root == null)
@@ -61,6 +64,34 @@ namespace AviPreperation.Data_Structures.Queues
 
             return result;
         }
+
+        //Time Complexity - O(n)
+        //Space Complexity - O(n), to maintain the recusion stack memory
+        List<IList<int>> levels = new List<IList<int>>();
+        public IList<IList<int>> LevelOrder_Recursive(TreeNode root)
+        {
+            if (root == null)
+                return levels;
+
+            helper(root, 0);
+            return levels;
+        }
+
+        public void helper(TreeNode node, int level)
+        {
+            if (levels.Count() == level)
+                levels.Add(new List<int>());
+
+            levels[level].Add(node.val);
+
+            if (node.left != null)
+                helper(node.left, level + 1);
+            if (node.right != null)
+                helper(node.right, level + 1);
+        }
+
+
+
         //public static void Main()
         //{
         //    TreeNode node = new TreeNode(3);
@@ -69,7 +100,9 @@ namespace AviPreperation.Data_Structures.Queues
         //    node.left.left = new TreeNode(25);
         //    node.left.right = new TreeNode(17);
 
-        //    LevelOrder(node);
+        //LevelOrder_Recursive(node);
+        //LevelOrder_Iterative(node);
+
         //}
     }
 }

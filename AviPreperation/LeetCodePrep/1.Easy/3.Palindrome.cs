@@ -20,6 +20,8 @@ namespace AviPreperation.LeetCodePrep._1.Easy
 {
 
     /********My Solution********* Incomplete but Wrong *****/
+    //TimeComplexity - O(n)
+    //SpaceComplexity - O(n)
     public class PalindromSol
     {
         public bool IsPalindrome(int x)
@@ -47,7 +49,9 @@ namespace AviPreperation.LeetCodePrep._1.Easy
         }
 
 
-        /********Recommended Solution**************/
+        /********Still Not a Recommended Solution**************/
+        //TimeComplexity - O(n)
+        //SpaceComplexity - O(1)
         public bool IsPalindrome1(int x)
         {
             if (x < 0) return false;
@@ -65,6 +69,28 @@ namespace AviPreperation.LeetCodePrep._1.Easy
 
             //if result is eauls to given number then returns true
             return result == x;
+        }
+
+
+
+        /********Recommended Solution**************/
+        //TimeComplexity - O(logn), we are travelling only half of the lenght of given number
+        //SpaceComplexity - O(1), no extra space is used.
+        public bool IsPalindrome2(int x)
+        {
+            //negative numbers non palindromic
+            //x%10 gives 0 means, the num ended with 0 like 100,200,300, are non palindromic.
+            if (x < 0 || (x != 0 && x % 10 == 0))
+                return false;
+
+            int revertedNumber = 0;
+            while (x > revertedNumber)
+            {
+                revertedNumber = revertedNumber * 10 + x % 10;
+                x /= 10;
+            }
+
+            return revertedNumber == x || revertedNumber / 10 == x;//if x is odd num
         }
     }
 }
