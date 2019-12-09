@@ -18,7 +18,7 @@ Output: false*/
 
 namespace AviPreperation.Data_Structures.String
 {
-    public class Solution
+    public class IsPalindrome1Solution
     {
 
         //TimeComplexity - O(N)

@@ -17,10 +17,10 @@ namespace AviPreperation.Data_Structures.String
             return kthGrammar(N - 1, prevK);
         }
 
-        public static void Main()
-        {
-            var pow = new KthGrammarSolution();
-            Console.WriteLine(pow.kthGrammar(4, 2));
-        }
+        //public static void Main()
+        //{
+        //    var pow = new KthGrammarSolution();
+        //    Console.WriteLine(pow.kthGrammar(4, 2));
+        //}
     }
 }
