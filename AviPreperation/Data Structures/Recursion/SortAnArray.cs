@@ -132,11 +132,11 @@ namespace AviPreperation.Data_Structures
             return i;
         }
 
-        public static void Main()
-        {
-            int[] a = new int[] { 4, 2, 1, 5, 6, 0, 3 };
-            var sort = new SortArraySolution();
-            sort.SortArray_Iterative(a);
-        }
+        //public static void Main()
+        //{
+        //    int[] a = new int[] { 4, 2, 1, 5, 6, 0, 3 };
+        //    var sort = new SortArraySolution();
+        //    sort.SortArray_Iterative(a);
+        //}
     }
 }
