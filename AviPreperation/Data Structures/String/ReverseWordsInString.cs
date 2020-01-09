@@ -2,8 +2,81 @@
 using System.Collections.Generic;
 using System.Text;
 
+/*Given an input string, reverse the string word by word.
+* Example 1:
+* Input: "the sky is blue"
+* Output: "blue is sky the"
+* 
+* Example 2:
+* Input: "  hello world!  "
+* Output: "world! hello"
+* Explanation: Your reversed string should not contain leading or trailing spaces.
+* 
+* Example 3:
+* Input: "a good   example"
+* Output: "example good a"
+* Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
+* 
+* Note:
+* A word is defined as a sequence of non-space characters.
+* Input string may contain leading or trailing spaces. However, your reversed string should not contain leading or trailing spaces.
+* You need to reduce multiple spaces between two words to a single space in the reversed string.
+*/
+
+
 namespace AviPreperation.Data_Structures.String
 {
+    /***********************************Good Solution******************************/
+    public class ReverseWordsInStringClass1
+    {
+        //Time Complexity - O(N)
+        //Doubt: Spce Complexity - O(N), used a String Builder which increases linearly with the length of input 
+        //Space complexity - O(1)
+        public string ReverseWords(string s)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            //Iterating From back
+            int i = s.Length - 1;
+
+            // finding each word from the end and appending that to stringbuilder
+            while (i >= 0)
+            {
+                //skip the spaces with index i 
+                if (s[i] == ' ')
+                {
+                    i--;
+                    continue;
+                }
+
+                //start the second pointer(j) before (i) and move front till reaches a space
+                int j = i - 1;
+                while (j >= 0 && s[j] != ' ')
+                    j--;
+
+                //Now, j is at space and i is at end of the word
+                //so, Append the space and the word from j+1 to i-j
+                sb.Append(" ");
+                sb.Append(s.Substring(j + 1, i - j));
+
+                //repeat the loop by i from the j front
+                i = j - 1;
+            }
+
+            //If the sb length >0 means we have a string characters init, so the given string has atleast one character init. so removing the extra space we are appending at the front of the sb
+            if (sb.Length > 0)
+                sb.Remove(0, 1);
+
+            return sb.ToString();
+
+        }
+    }
+
+    //Approach:
+    // Reverse whole string
+    // Find each word with two pointers
+    // Reverse each word
+    // remove the spaces by moving two pointers and return the substring with the length of the pointer position
     public class ReverseWordsInStringClass
     {
         public static string ReverseWordsInString(string s)

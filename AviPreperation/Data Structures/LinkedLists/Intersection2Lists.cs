@@ -14,6 +14,8 @@ namespace AviPreperation.Data_Structures.LinkedLists
    
     public class Solution
     {
+        //TC - O(m+n)
+        //SC - O(1)
         public ListNode1 GetIntersectionNode(ListNode1 headA, ListNode1 headB)
         {
             if (headA == null || headB == null)

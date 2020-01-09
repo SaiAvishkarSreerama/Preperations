@@ -30,6 +30,8 @@ namespace AviPreperation.Data_Structures.Stacks
 
     public class Solution
     {
+
+        /**************************************************************************************************************/
         //Since the question is asked for Iteration than the Recusrsive
         public static IList<int> PreorderTraversal(TreeNode root)
         {
@@ -65,7 +67,34 @@ namespace AviPreperation.Data_Structures.Stacks
             return list;
         }
 
-        public IList<int> InorderTraversal(TreeNode root)
+        /**************************************************************************************************************/
+        //RECURSION APPRAOCH
+        //Time Complexity - O(N)
+        //Space COmplexity - O(N)
+        public IList<int> InorderTraversal_RECURSION(TreeNode root)
+        {
+            List<int> result = new List<int>();
+            helper(root, result);
+            return result;
+        }
+
+        public void helper(TreeNode root, List<int> res)
+        {
+            if (root == null)
+                return;
+
+            if (root.left != null)
+                helper(root.left, res);
+
+            res.Add(root.val);
+
+            if (root.right != null)
+                helper(root.right, res);
+        }
+        //ITERATION APPROACH
+        //Time Complexity = O(N)
+        //Spce Complexity = O(N)
+        public IList<int> InorderTraversal_ITERATION(TreeNode root)
         {
             Stack<TreeNode> stack = new Stack<TreeNode>();
             IList<int> list = new List<int>();
@@ -94,6 +123,7 @@ namespace AviPreperation.Data_Structures.Stacks
             return list;
         }
 
+        /**************************************************************************************************************/
         public IList<int> PostorderTraversal(TreeNode root)
         {
             Stack<TreeNode> stack = new Stack<TreeNode>();

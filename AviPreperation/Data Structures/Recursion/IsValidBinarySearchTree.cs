@@ -34,6 +34,7 @@ namespace AviPreperation.Data_Structures.Recursion
         //TimeComplexity - O(N)
         //Space Complexity - O(N)
         //ITERATION - USING INORDER TRAVERSAL
+        //Using inorder always gives [-1,0,1,2,3,4,5....] ascending order of a tree values if the tree is balanced binary tree
         public bool IsValidBST_ITERATION(TreeNode root)
         {
             if (root == null)

@@ -6,13 +6,40 @@ namespace AviPreperation.Data_Structures.String
 {
     class KMPStringSearch
     {
-        //Time Complexity - O(m+n), where m = needle.Length, n=haystack.Length
-        //Space Compelxity - O(m)
-        //AbdulBari: https://www.youtube.com/watch?v=V5-7GzOfADQ
-        //TusharRoy: https://www.youtube.com/watch?v=GTJr8OvyEVQ
+        //TimeComplexity - O(mn)
+        //SpaceComplexity - O(1)
+        public int StrStr1(string haystack, string needle)
+        {
+            if (needle.Length == 0)
+                return 0;
+            if (haystack.Length == 0)
+                return -1;
 
 
-        public static int StrStr(string haystack, string needle)
+            for (int i = 0; i <= haystack.Length - needle.Length; i++)
+            {
+                for (int j = 0; j <= needle.Length; j++)
+                {
+                    if (j == needle.Length)
+                        return i;
+
+                    if (haystack[i + j] != needle[j])
+                        break;
+                }
+            }
+            return -1;
+        }
+
+
+
+
+    //Time Complexity - O(m+n), where m = needle.Length, n=haystack.Length
+    //Space Compelxity - O(m)
+    //AbdulBari: https://www.youtube.com/watch?v=V5-7GzOfADQ
+    //TusharRoy: https://www.youtube.com/watch?v=GTJr8OvyEVQ
+
+
+    public static int StrStr(string haystack, string needle)
         {
             //Here needle is the patter we are finding in text which is haystack
             if (needle.Length == 0)
@@ -97,4 +124,5 @@ namespace AviPreperation.Data_Structures.String
         //    Console.ReadLine();
         //}
     }
+
 }

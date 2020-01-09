@@ -38,7 +38,7 @@ namespace AviPreperation.Data_Structures.Recursion
 
         //ITERATIVE
         //Time Complexity - O(logn)
-        //Space Complexity - O(logn)
+        //Space Complexity - O(1)
         public double MyPow(double x, int n)
         {
             if (n == 0)

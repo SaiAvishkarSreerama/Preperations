@@ -19,7 +19,8 @@ namespace AviPreperation.Data_Structures.String
             {
                 for (int j = i; j < n; j++)
                 {
-                    //If both letters are same and if the lenth between them is <3 nothing need todo, else we can get the between length string from the dp[i+1, j-1]
+                    //If both letters are same and if the lenth between them is <3 nothing need todo, 
+                    //else we can get the between length string from the dp[i+1, j-1]
                     dp[i, j] = ((s[i] == s[j]) && (j - i < 3 || dp[i + 1, j - 1]));
                     if (dp[i, j] && (res.Length == 0 || j - i + 1 > res.Length))
                     {
@@ -97,15 +98,15 @@ namespace AviPreperation.Data_Structures.String
             int maxLength = 0;
             int minStart = 0;
 
-            for (int i = 0; i < s.Length - 1;)
+            for (int i = 0; i < s.Length - 1; i++)
             {
                 int L = i; //Left
                 int R = i; //Right
 
-                while (R < s.Length - 1 && s[R] == s[R + 1])
+                while (R < s.Length - 1 && s[R] == s[R + 1])//r should be less than length-1, so that r++ would not though exception
                     R++;
 
-                i = R + 1;
+                i = R;
                 while (R < s.Length - 1 && L > 0 && s[R + 1] == s[L - 1])
                 {
                     R++;
@@ -122,11 +123,11 @@ namespace AviPreperation.Data_Structures.String
 
             return s.Substring(minStart, maxLength);
         }
-        public static void Main()
-        {
-            var obj = new LongestPalindromicSubStringSolution();
-            //obj.LongestPalindrome1("babcbabcba");
-            Console.WriteLine(obj.LongestPalindrome2("aabaabaa"));
-        }
+        //public static void Main()
+        //{
+        //    var obj = new LongestPalindromicSubStringSolution();
+        //    //obj.LongestPalindrome1("babcbabcba");
+        //    Console.WriteLine(obj.LongestPalindrome2("aabaabaa"));
+        //}
     }
 }
