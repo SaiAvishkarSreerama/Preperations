@@ -34,7 +34,7 @@ using System.Text;
 * Node.left.val < Node.val < Node.right.val
 * All values of Node.val are unique.
 * 0 <= Number of Nodes <= 2000*/
-namespace AviPreperation.Data_Structures.Recursion
+namespace AviPreperation.Data_Structures
 {
    
     // Definition for a Node.

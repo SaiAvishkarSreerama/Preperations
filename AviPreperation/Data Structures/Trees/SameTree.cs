@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AviPreperation.Data_Structures.Recursion
+namespace AviPreperation.Data_Structures
 {
     class SameTree
     {

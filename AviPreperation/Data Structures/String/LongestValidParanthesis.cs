@@ -70,7 +70,7 @@ namespace AviPreperation.Data_Structures.String
             }
             left = right = 0;
             // <====
-            for (int i = s.Lemght - 1; i >= 0; i--)
+            for (int i = s.Length - 1; i >= 0; i--)
             {
                 if (s[i] == '(')
                     left++;

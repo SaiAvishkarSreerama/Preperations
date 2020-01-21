@@ -24,7 +24,7 @@ namespace AviPreperation.Data_Structures.Array
         //Using Two pointers
         //Time Complexity - O(n)
         //Space Complexity - O(1)
-        public int[] TwoSum(int[] n, int t)
+        public int[] TwoSumII_1(int[] n, int t)
         {
             int l = 0;
             int r = n.Length - 1;
@@ -40,6 +40,26 @@ namespace AviPreperation.Data_Structures.Array
                     l++;
             }
             return new int[2];
+        }
+
+        //TC - O(n)
+        //SC - O(n)
+        public int[] TwoSumII_2(int[] numbers, int target)
+        {
+            Dictionary<int, int> d = new Dictionary<int, int>();
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (d.ContainsKey(target - numbers[i]))
+                {
+                    return new int[] { d[target - numbers[i]], i + 1 };
+                }
+                else if (!d.ContainsKey(numbers[i]))
+                {
+                    d.Add(numbers[i], i + 1);
+                }
+            }
+
+            return new int[0];
         }
     }
 }

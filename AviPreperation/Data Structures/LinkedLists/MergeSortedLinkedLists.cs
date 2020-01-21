@@ -15,9 +15,50 @@ namespace AviPreperation.Data_Structures.LinkedLists
  * }
  */
 
+        /***************************RECURSION*****************************************/
+        //TimeComplexity - O(m+n)
+        //SpaceComplexity - O(m+n) n+m stack frames for n+m output
+        public ListNode MergeTwoLists(ListNode l1, ListNode l2)
+        {
+            if (l1 == null) return l2;
+            if (l2 == null) return l1;
+            ListNode res = new ListNode(0);
+
+            helper(l1, l2, res);
+            return res.next;
+        }
+
+        public void helper(ListNode l1, ListNode l2, ListNode res)
+        {
+            if (l1 == null)
+            {
+                res.next = l2;
+                return;
+            }
+            if (l2 == null)
+            {
+                res.next = l1;
+                return;
+            }
+
+            if (l1.val < l2.val)
+            {
+                res.next = new ListNode(l1.val);
+                l1 = l1.next;
+            }
+            else
+            {
+                res.next = new ListNode(l2.val);
+                l2 = l2.next;
+            }
+            res = res.next;
+            helper(l1, l2, res);
+        }
+
+        /***************************ITERATION*****************************************/
         //TimeComplexity - O(m+n), m = length l1, n = length l2
         //SpaceComplexity - O(1) 
-        public ListNode MergeTwoLists(ListNode l1, ListNode l2)
+        public ListNode MergeTwoLists2(ListNode l1, ListNode l2)
         {
             if (l1 == null)
                 return l2;

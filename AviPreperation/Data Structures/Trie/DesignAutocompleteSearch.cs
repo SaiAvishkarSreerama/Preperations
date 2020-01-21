@@ -279,19 +279,19 @@ namespace AviPreperation.Data_Structures.Trie
         }
     }
 
-    public class MainClass
-    {
-        public static void Main()
-        {
-            string[] sentences = new string[] { "i love you", "island", "iroman", "i love leetcode" };
-            int[] time = new int[] { 5, 3, 2, 2 };
-            AutocompleteSystem obj = new AutocompleteSystem(sentences, time);
+    //public class MainClass
+    //{
+    //    public static void Main()
+    //    {
+    //        string[] sentences = new string[] { "i love you", "island", "iroman", "i love leetcode" };
+    //        int[] time = new int[] { 5, 3, 2, 2 };
+    //        AutocompleteSystem obj = new AutocompleteSystem(sentences, time);
 
-            obj.Input('i');
-            obj.Input(' ');
-            obj.Input('a');
-            obj.Input('#');
-        }
-    }
+    //        obj.Input('i');
+    //        obj.Input(' ');
+    //        obj.Input('a');
+    //        obj.Input('#');
+    //    }
+    //}
 
 }

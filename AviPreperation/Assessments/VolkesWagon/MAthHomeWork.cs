@@ -49,13 +49,13 @@ namespace AviPreperation.Assessments.VolkesWagon
 
         }
 
-        public static void Main()
-        {
-            //min num of steps to reach from 1st index we can go either i+1 or i+2
-            int threshold = 4;
-            int[] points = { 1, 2, 3, 5, 8 };
+        //public static void Main()
+        //{
+        //    //min num of steps to reach from 1st index we can go either i+1 or i+2
+        //    int threshold = 4;
+        //    int[] points = { 1, 2, 3, 5, 8 };
 
-            //minNum(threshold, points);
-        }
+        //    //minNum(threshold, points);
+        //}
     }
 }

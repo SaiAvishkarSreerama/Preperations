@@ -38,16 +38,16 @@ namespace AviPreperation.Data_Structures.Recursion.BackTracking
                 string digit = next_digit.Substring(0, 1);
                 string letters = d[digit];
 
-                for (int i = 0; i < letters.Length; i++)
+                foreach (char c in letters)
                 {
-                    string letter = d[digit].Substring(i, 1);
-                    backtrack(combination + letter, next_digit.Substring(1));
+                    backtrack(combination + c.ToString(), next_digit.Substring(1));
                 }
             }
         }
     }
 
-    //public class MainClass {
+    //public class MainClass
+    //{
     //    public static void Main()
     //    {
     //        var obj = new LetterCombinationsOfPhoneNumber();
