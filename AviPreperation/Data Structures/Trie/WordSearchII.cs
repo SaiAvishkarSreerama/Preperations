@@ -95,20 +95,20 @@ namespace AviPreperation.Data_Structures.Trie
             return root;
         }
     }
-    public class MainClass
-    {
-        public static void Main()
-        {
-            char[][] board = new char[4][]
-            {
-               new char[]{'o','a','a','n'},
-               new char[]{'e','t','a','e'},
-               new char[]{'i','h','k','r'},
-               new char[]{'i','f','l','v'},
-            };
-            string[] words = new string[] { "oath", "pea", "eat", "rain" };
-            var obj = new WordSearchIISolution();
-            Console.WriteLine(obj.FindWords(board, words));
-        }
-    }
+    //public class MainClass
+    //{
+    //    public static void Main()
+    //    {
+    //        char[][] board = new char[4][]
+    //        {
+    //           new char[]{'o','a','a','n'},
+    //           new char[]{'e','t','a','e'},
+    //           new char[]{'i','h','k','r'},
+    //           new char[]{'i','f','l','v'},
+    //        };
+    //        string[] words = new string[] { "oath", "pea", "eat", "rain" };
+    //        var obj = new WordSearchIISolution();
+    //        Console.WriteLine(obj.FindWords(board, words));
+    //    }
+    //}
 }

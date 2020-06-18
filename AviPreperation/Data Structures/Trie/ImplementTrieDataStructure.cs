@@ -46,7 +46,7 @@ namespace AviPreperation.Data_Structures.Trie
                 if (cur.children[c - 'a'] == null)
                     return false;
                 cur = cur.children[c - 'a'];
-            }
+            } 
             return cur.isWord;
         }
 

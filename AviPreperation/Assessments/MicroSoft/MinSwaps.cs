@@ -37,10 +37,11 @@ namespace AviPreperation.Assessments.MicroSoft
             }
             return count;
         }
-        
+
         //public static void Main()
         //{
-        //    Console.WriteLine(MinSwapssolution("baaaaa"));
+        //    //Console.WriteLine(MinSwapssolution("baaaaa"));
+        //    Console.WriteLine(MinSwapssolution("aaabbba"));
         //}
-}
+    }
 }

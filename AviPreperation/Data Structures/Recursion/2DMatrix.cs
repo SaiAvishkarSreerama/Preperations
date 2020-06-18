@@ -25,9 +25,38 @@ using System.Text;
  */
 namespace AviPreperation.Data_Structures.Recursion
 {
+    public class Search2DMatrix_I_Solution
+    {
+        //TC - O(log mn)
+        //SC - O(1)
+        public bool SearchMatrix(int[][] matrix, int target)
+        {
+            int m = matrix.Length;
+            if (m == 0)
+                return false;
+            int n = matrix[0].Length;
+
+            int left = 0;
+            int right = m * n - 1;
+            while (left <= right)
+            {
+                int mid = left + (right - left) / 2;
+                int midEle = matrix[mid / n][mid % n];
+                if (target == midEle)
+                    return true;
+                else if (target < midEle)
+                    right = mid - 1;
+                else
+                    left = mid + 1;
+            }
+
+            return false;
+        }
+    }
+
     // TimeComplexity -O(m+n)
     //spceComplexity - O(1)
-    public class _2DMatrixSolution
+    public class Search2DMatrix_II_Solution
     {
         public bool SearchMatrix(int[,] matrix, int target)
         {

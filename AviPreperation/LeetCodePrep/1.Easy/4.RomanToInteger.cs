@@ -91,24 +91,26 @@ namespace AviPreperation.LeetCodePrep._1.Easy
             {
                 //Generate a dictionary
                 var RomanToInt = new Dictionary<char, int>(){
-        {'I', 1},
-        {'V', 5},
-        {'X', 10},
-        {'L', 50},
-        {'C', 100},
-        {'D', 500},
-        {'M', 1000}};
-                int result = RomanToInt[s[s.Length - 1]];
+                {'I', 1},
+                {'V', 5},
+                {'X', 10},
+                {'L', 50},
+                {'C', 100},
+                {'D', 500},
+                {'M', 1000}};
+                int result = RomanToInt[s[s.Length - 1]]; //taking the last char from string and adding its value to res form the dictionary
 
+                //Iterate from back to geteach value
                 for (int i = s.Length - 2; i >= 0; i--)
                 {
 
-                    var currentVal = RomanToInt[s[i]];
-                    var nextVal = RomanToInt[s[i + 1]];
+                    var currentVal = RomanToInt[s[i]]; //get the current value from i index character 
+                    var prevVal = RomanToInt[s[i + 1]]; //get the prevValue from i+1, where we have added it in result
 
-                    if (currentVal < nextVal)
+                    //if the cure val is less than the previous, let say I and X in IX-9 spom delete the value 1 from 10, gives 9
+                    if (currentVal < prevVal)
                         result -= currentVal;
-                    else
+                    else  
                         result += currentVal;
                 }
 

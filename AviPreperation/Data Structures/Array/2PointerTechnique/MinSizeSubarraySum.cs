@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 
-//Given a binary array, find the maximum number of consecutive 1s in this array.
+//Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn't one, return 0 instead.
 
-//Example 1:
-//Input: [1,1,0,1,1,1]
-//Output: 3
-//Explanation: The first two digits or the last three digits are consecutive 1s.
-//    The maximum number of consecutive 1s is 3.
-//Note:
+//Example: 
 
-//The input array will only contain 0 and 1.
-//The length of input array is a positive integer and will not exceed 10,000
+//Input: s = 7, nums = [2,3,1,2,4,3]
+//Output: 2
+//Explanation: the subarray[4, 3] has the minimal length under the problem constraint.
+//Follow up:
+//If you have figured out the O(n) solution, try coding another solution of which the time complexity is O(n log n). 
 public  class MinSizeSubarraySumClass
 {
     // Time complexity - O(n) -- Each element can be visited atmost twice, once by the right pointer(ii) and(atmost)once by the \text{left}left pointer.

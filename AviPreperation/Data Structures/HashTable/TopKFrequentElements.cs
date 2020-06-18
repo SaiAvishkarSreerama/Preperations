@@ -56,8 +56,11 @@ namespace AviPreperation.Data_Structures.HashTable
                 {
                     foreach (int t in olist[i])
                     {
-                        topK.Add(t);
-                        k--;
+                        if (k > 0)
+                        {
+                            topK.Add(t);
+                            k--;
+                        }
                     }
                 }
             }
