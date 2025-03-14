@@ -1,7 +1,7 @@
 ﻿namespace PreperationsTest
 {
     [TestClass]
-    public sealed class Test1
+    public sealed class TestTemplate
     {
         [ClassInitialize]
         public static void ClassInit(TestContext context)

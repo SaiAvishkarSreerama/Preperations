@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PreperationsTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72862d6412f470cbfd3e1b8abe8626e32472bb8f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9ef5b3a42663a3831d140185eeca0be0d4cdd76")]
 [assembly: System.Reflection.AssemblyProductAttribute("PreperationsTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PreperationsTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\Preperations\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|c:\\projects\\preperations\\preperationstest\\datastructures\\heap\\binaryheapimplementation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|solutionrelative:preperationstest\\datastructures\\heap\\binaryheapimplementation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|c:\\projects\\preperations\\preperationstest\\testtemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|solutionrelative:preperationstest\\testtemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|c:\\projects\\preperations\\preperationstest\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|solutionrelative:preperationstest\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|c:\\projects\\preperations\\preperationstest\\datastructures\\heap\\binaryheapimplementation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|solutionrelative:preperationstest\\datastructures\\heap\\binaryheapimplementation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BinaryHeapImplementation.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\DataStructures\\Heap\\BinaryHeapImplementation.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\DataStructures\\Heap\\BinaryHeapImplementation.cs",
               "ToolTip": "C:\\Projects\\Preperations\\PreperationsTest\\DataStructures\\Heap\\BinaryHeapImplementation.cs",
               "RelativeToolTip": "PreperationsTest\\DataStructures\\Heap\\BinaryHeapImplementation.cs",
-              "ViewState": "AgIAADYAAADAMzMzM5MwwFIAAABhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T16:13:29.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Test1.cs",
-              "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Test1.cs",
-              "RelativeDocumentMoniker": "PreperationsTest\\Test1.cs",
-              "ToolTip": "C:\\Projects\\Preperations\\PreperationsTest\\Test1.cs",
-              "RelativeToolTip": "PreperationsTest\\Test1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TestTemplate.cs",
+              "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\TestTemplate.cs",
+              "RelativeDocumentMoniker": "PreperationsTest\\TestTemplate.cs",
+              "ToolTip": "C:\\Projects\\Preperations\\PreperationsTest\\TestTemplate.cs",
+              "RelativeToolTip": "PreperationsTest\\TestTemplate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T15:45:02.311Z",
               "EditorCaption": ""
