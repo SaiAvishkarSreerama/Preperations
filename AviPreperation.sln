@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29001.49
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AviPreperation", "AviPreperation\AviPreperation.csproj", "{CDD94ED1-29DE-4A86-BB87-DCBC86C507D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreperationsTest", "PreperationsTest\PreperationsTest.csproj", "{22F350F5-C725-4091-87C6-FF809511C9E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{CDD94ED1-29DE-4A86-BB87-DCBC86C507D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDD94ED1-29DE-4A86-BB87-DCBC86C507D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDD94ED1-29DE-4A86-BB87-DCBC86C507D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22F350F5-C725-4091-87C6-FF809511C9E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F350F5-C725-4091-87C6-FF809511C9E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F350F5-C725-4091-87C6-FF809511C9E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F350F5-C725-4091-87C6-FF809511C9E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
