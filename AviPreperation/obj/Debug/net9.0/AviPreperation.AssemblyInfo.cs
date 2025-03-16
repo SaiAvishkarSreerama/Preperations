@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AviPreperation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72862d6412f470cbfd3e1b8abe8626e32472bb8f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6ac8064cf3115189ad4ce825cebb48abaf51f85")]
 [assembly: System.Reflection.AssemblyProductAttribute("AviPreperation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AviPreperation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
