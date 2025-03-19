@@ -1,0 +1,5 @@
+C:\Projects\Preperations\AviPreperation\obj\Debug\net9.0\AviPreperation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Preperations\AviPreperation\obj\Debug\net9.0\AviPreperation.AssemblyInfoInputs.cache
+C:\Projects\Preperations\AviPreperation\obj\Debug\net9.0\AviPreperation.AssemblyInfo.cs
+C:\Projects\Preperations\AviPreperation\obj\Debug\net9.0\AviPreperation.csproj.CoreCompileInputs.cache
+C:\Projects\Preperations\AviPreperation\obj\Debug\net9.0\AviPreperation.sourcelink.json
