@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Projects\\Preperations\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|c:\\projects\\preperations\\preperationstest\\algorithms\\sorting\\insertionsort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|solutionrelative:preperationstest\\algorithms\\sorting\\insertionsort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|c:\\projects\\preperations\\preperationstest\\algorithms\\sorting\\selectionsort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|solutionrelative:preperationstest\\algorithms\\sorting\\selectionsort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,19 +47,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "InsertionSort.cs",
+              "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\Sorting\\InsertionSort.cs",
+              "RelativeDocumentMoniker": "PreperationsTest\\Algorithms\\Sorting\\InsertionSort.cs",
+              "ToolTip": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\Sorting\\InsertionSort.cs",
+              "RelativeToolTip": "PreperationsTest\\Algorithms\\Sorting\\InsertionSort.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T16:22:16.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "SelectionSort.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\Sorting\\SelectionSort.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\Algorithms\\Sorting\\SelectionSort.cs",
               "ToolTip": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\Sorting\\SelectionSort.cs",
               "RelativeToolTip": "PreperationsTest\\Algorithms\\Sorting\\SelectionSort.cs",
-              "ViewState": "AgIAABcAAAAANDMzMzPvvxoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T12:45:56.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BubbleSort.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\Sorting\\BubbleSort.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\Algorithms\\Sorting\\BubbleSort.cs",
@@ -68,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Trie.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\DataStructures\\Trie\\Trie.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\DataStructures\\Trie\\Trie.cs",
@@ -80,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TrieImplementation.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\DataStructures\\Trie\\TrieImplementation.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\DataStructures\\Trie\\TrieImplementation.cs",
@@ -93,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "BinaryHeapImplementation.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\DataStructures\\Heap\\BinaryHeapImplementation.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\DataStructures\\Heap\\BinaryHeapImplementation.cs",
@@ -106,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TestTemplate.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\TestTemplate.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\TestTemplate.cs",
