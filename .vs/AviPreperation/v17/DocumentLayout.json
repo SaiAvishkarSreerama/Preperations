@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Projects\\Preperations\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|c:\\projects\\preperations\\preperationstest\\algorithms\\divideandconquer\\matrixmultiplication_strassens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|solutionrelative:preperationstest\\algorithms\\divideandconquer\\matrixmultiplication_strassens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|c:\\projects\\preperations\\preperationstest\\algorithms\\divideandconquer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|solutionrelative:preperationstest\\algorithms\\divideandconquer\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|c:\\projects\\preperations\\preperationstest\\datastructures\\heap\\binaryheapimplementation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|solutionrelative:preperationstest\\datastructures\\heap\\binaryheapimplementation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|c:\\projects\\preperations\\preperationstest\\algorithms\\divideandconquer\\matrixmultiplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|solutionrelative:preperationstest\\algorithms\\divideandconquer\\matrixmultiplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|c:\\projects\\preperations\\preperationstest\\algorithms\\divideandconquer\\heapsort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|solutionrelative:preperationstest\\algorithms\\divideandconquer\\heapsort.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|c:\\projects\\preperations\\preperationstest\\datastructures\\heap\\binaryheapimplementation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|solutionrelative:preperationstest\\datastructures\\heap\\binaryheapimplementation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22F350F5-C725-4091-87C6-FF809511C9E9}|PreperationsTest\\PreperationsTest.csproj|c:\\projects\\preperations\\preperationstest\\algorithms\\divideandconquer\\binarysearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -68,7 +76,7 @@
               "RelativeDocumentMoniker": "PreperationsTest\\DataStructures\\Heap\\BinaryHeapImplementation.cs",
               "ToolTip": "C:\\Projects\\Preperations\\PreperationsTest\\DataStructures\\Heap\\BinaryHeapImplementation.cs",
               "RelativeToolTip": "PreperationsTest\\DataStructures\\Heap\\BinaryHeapImplementation.cs",
-              "ViewState": "AgIAAHIAAAAA0MzMzEwYwI0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAqwI0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T16:13:29.598Z",
               "IsPinned": true,
@@ -76,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "HeapSort.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\DivideAndConquer\\HeapSort.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\Algorithms\\DivideAndConquer\\HeapSort.cs",
@@ -95,19 +103,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MatrixMultiplication_Strassens.cs",
+              "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\DivideAndConquer\\MatrixMultiplication_Strassens.cs",
+              "RelativeDocumentMoniker": "PreperationsTest\\Algorithms\\DivideAndConquer\\MatrixMultiplication_Strassens.cs",
+              "ToolTip": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\DivideAndConquer\\MatrixMultiplication_Strassens.cs",
+              "RelativeToolTip": "PreperationsTest\\Algorithms\\DivideAndConquer\\MatrixMultiplication_Strassens.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:30:02.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MatrixMultiplication.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\DivideAndConquer\\MatrixMultiplication.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\Algorithms\\DivideAndConquer\\MatrixMultiplication.cs",
-              "ToolTip": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\DivideAndConquer\\MatrixMultiplication.cs \u2B24",
-              "RelativeToolTip": "PreperationsTest\\Algorithms\\DivideAndConquer\\MatrixMultiplication.cs \u2B24",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "ToolTip": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\DivideAndConquer\\MatrixMultiplication.cs",
+              "RelativeToolTip": "PreperationsTest\\Algorithms\\DivideAndConquer\\MatrixMultiplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T12:47:52.486Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MergeSort.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\DivideAndConquer\\MergeSort.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\Algorithms\\DivideAndConquer\\MergeSort.cs",
@@ -120,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "QuickSort.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\DivideAndConquer\\QuickSort.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\Algorithms\\DivideAndConquer\\QuickSort.cs",
@@ -133,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "BinarySearch.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\DivideAndConquer\\BinarySearch.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\Algorithms\\DivideAndConquer\\BinarySearch.cs",
@@ -146,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "InsertionSort.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\Sorting\\InsertionSort.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\Algorithms\\Sorting\\InsertionSort.cs",
@@ -159,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "SelectionSort.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\Sorting\\SelectionSort.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\Algorithms\\Sorting\\SelectionSort.cs",
@@ -172,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "BubbleSort.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\Sorting\\BubbleSort.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\Algorithms\\Sorting\\BubbleSort.cs",
@@ -185,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Trie.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\DataStructures\\Trie\\Trie.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\DataStructures\\Trie\\Trie.cs",
@@ -197,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "TrieImplementation.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\DataStructures\\Trie\\TrieImplementation.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\DataStructures\\Trie\\TrieImplementation.cs",
@@ -210,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "TestTemplate.cs",
               "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\TestTemplate.cs",
               "RelativeDocumentMoniker": "PreperationsTest\\TestTemplate.cs",
@@ -219,6 +240,40 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-14T15:45:02.311Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "7ee69fb0-d57b-4398-bc2c-e48976a688bf",
+        "Display": 0,
+        "X": 43,
+        "Y": 159,
+        "Width": 1882,
+        "Height": 878,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\DivideAndConquer\\Class1.cs",
+              "RelativeDocumentMoniker": "PreperationsTest\\Algorithms\\DivideAndConquer\\Class1.cs",
+              "ToolTip": "C:\\Projects\\Preperations\\PreperationsTest\\Algorithms\\DivideAndConquer\\Class1.cs",
+              "RelativeToolTip": "PreperationsTest\\Algorithms\\DivideAndConquer\\Class1.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAuwDoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T21:33:00.469Z",
+              "EditorCaption": ""
             }
           ]
         }
