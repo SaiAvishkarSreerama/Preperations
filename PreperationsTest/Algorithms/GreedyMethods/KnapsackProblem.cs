@@ -1,9 +1,12 @@
 ﻿/*
  * Problem: Maximum number of profit can we get by filling the knapsack with the objects
  * Constraint: Total weight the knapsack can carry is x-kg/lbs only
- * Time Complexity:
- * 
- * Space Complexity: 
+ * Time Complexity: O(N logN)
+ *      Sorting takes N logN time
+ *      Iterating through all objects takes N time
+ * Space Complexity: O(N)
+ *      No new space is used here, but used all constants which takes O(1)
+ *      Input object takes O(N), combining both it will be O(N)
  */
 
 using System.Collections;
