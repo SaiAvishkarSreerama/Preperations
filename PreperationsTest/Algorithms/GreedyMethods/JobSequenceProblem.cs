@@ -138,7 +138,7 @@ namespace PreperationsTest.Algorithms.GreedyMethods
                 {
                     pq.Enqueue(job.Item2, job.Item2);
                 }
-                else if(pq.Count > 0 && pq.Peek() < job.Item2)
+                else if (pq.Count > 0 && pq.Peek() < job.Item2)
                 {
                     pq.Dequeue();
                     pq.Enqueue(job.Item2, job.Item2);
@@ -146,7 +146,7 @@ namespace PreperationsTest.Algorithms.GreedyMethods
             }
 
             //Iterate through the pq and Deququq one by one and add it to maxProfit
-            while(pq.Count > 0)
+            while (pq.Count > 0)
             {
                 maxProfit += pq.Dequeue();
             }
@@ -158,14 +158,80 @@ namespace PreperationsTest.Algorithms.GreedyMethods
         /// <summary>
         /// Using Disjoint Sets
         /// https://www.geeksforgeeks.org/job-sequencing-problem-using-disjoint-set/
+        /// Time Complexity: O(N Log(d))
+        ///      Sorting the list takes 'n logn' time
+        ///      Iterating the list takes N time
+        /// space Complexity: O(d)
         /// </summary>
         /// <param name="job"></param>
         /// <param name="profit"></param>
         /// <param name="deadline"></param>
         /// <returns></returns>
-        public int JobSequence_DisjointSets(int[] job, int[] profit, int[] deadline)
+        public int JobSequence_DisjointSets(int[] jobId, int[] profit, int[] deadline)
         {
-            return 0;
+            int maxDeadline = int.MinValue;
+            int maxProfit = 0;
+            int n = jobId.Length;
+
+            // form a tuple with all info
+            List<(int, int, int)> jobInfo = new List<(int, int, int)>();
+            for (int i = 0; i < n; i++)
+            {
+                jobInfo.Add(new(jobId[i], profit[i], deadline[i]));
+                if (deadline[i] > maxDeadline)
+                {
+                    maxDeadline = Math.Max(maxDeadline, deadline[i]);
+                }
+            }
+
+            // Sort the job info list based on profits, descending b->a
+            jobInfo.Sort((a, b) => b.Item2.CompareTo(a.Item2));
+
+            DisJointSet ds = new DisJointSet(maxDeadline);
+            for (int i = 0; i < jobId.Length; i++)
+            {
+                // get the slot of the current job deadline
+                int slots = ds.Find(jobInfo[i].Item3);
+
+                if (slots > 0)
+                {
+                    ds.Union(ds.Find(slots - 1), slots); // Here we set each slot's parent as its previous dlot (slot -1)
+                                                         // That means when 2 comes, 2 slots are availble, we use one slot and set parent[2] = 1.
+                                                         // When another 2 comes, we get parent[2] = 1, means 1 slot availble, and agian set parent[1] = 0
+                                                         // when another job comes, we traverse to the parent and get 0, means 0 available slots
+                    maxProfit += jobInfo[i].Item2;
+                }
+            }
+            return maxProfit;
+        }
+
+        public class DisJointSet
+        {
+            public int[] parent { get; set; }
+
+            public DisJointSet(int d) // d is the maxdeadline
+            {
+                parent = new int[d + 1];
+
+                for (int i = 0; i <= d; i++)
+                {
+                    parent[i] = i;
+                }
+            }
+
+            public int Find(int i)
+            {
+                if (parent[i] != i)
+                {
+                    parent[i] = Find(parent[i]);
+                }
+                return parent[i];
+            }
+
+            public void Union(int x, int y)
+            {
+                parent[y] = x;
+            }
         }
     }
 }
