@@ -1,6 +1,14 @@
 ﻿/*
  * Huffman Encoder: Assigns prefix codes for the characters based on their frequecies
  * Huffman Decoder: Extracts the message(characters) from the prefix code that are assigned during the encoder
+ * Time Complexity: O(N logN)
+ *      Sorting the min heap - O(N logN)
+ *      Traversing the heap branches - O(logN)
+ *      Traversing Root for decoder - O(logN)
+ *      ExtractMin takes O(logN), as it calls Heapify()
+ *  Space Complexity - O(N)
+ *      Memory usage for storing minHeap
+ *      additional memory for any used arrays or lists O(n)
  */
 
 using System.Collections;
