@@ -87,7 +87,7 @@ namespace AviPreperation.Data_Structures.Trees.BST
                         }
                         else
                             cur = cur.right;
-                    }-
+                    }
                 }
 
                 return new TreeNode(val);
