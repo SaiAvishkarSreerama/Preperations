@@ -2,6 +2,24 @@
  * PRIM's method states that a min cost of the spanning tree can be achieved by stating from a min weight edge and traversing through the connected min weight edges only.
  * Using Adjaceny Array the TC and SC takes O(V^2) andd O(V)
  * Using Adjacency list the TC and SC comes down to O((V+E)* logV) and O(V + E)
+ * 
+ * Explanation:
+ * 1. Get the length of the matrix v = graph.GetLength(0);
+ * 2. Declare three matrices of size v, and intialize with int.MaxValues and false.
+ *      1. Parent[] - to maintian the parent node of current node
+ *      2. Key[] - To maintain the current node smallest value 
+ *      3. Visited - To note the already visited nodes
+ *  3. Lets start from 0-node, parent[0]=-1, key[0] = 0;
+ *  4. Iterate the graph from [0 - 8] nodes
+ *      1. Get the minValueIndex - intially we have key[0] = 0 < int.MaxValue, now minIndex is 0, which means we are at 0 node
+ *      2. iterate j=0-8 numbers for 0node, with these 3 conditions
+ *          a. graph[minIndex,j] != 0
+ *          b. visited[j] != true
+ *          c. graph[minIndex, j] < key[j], it must be less than already visited value
+ *      3. then update parent as minIndex, and now we have even less value, so update key[j] = graphValue.
+ *  5. Done
+ *      Note: MinIndex will be 0-8, not consecutively, for each row, we iterate from 0-8 column and when a num found we compare it with key[] and if less then
+ *          we consider the minValue as that value and minIndex that index. If found at col2, still we iterate till col-8 and we dont know if we can find at col8 also
  **/
 
 namespace PreperationsTest.Algorithms.DivideAndConquer
@@ -13,16 +31,40 @@ namespace PreperationsTest.Algorithms.DivideAndConquer
         [TestMethod]
         public void Run()
         {
-            int[,] graph = new int[,]{{ 0, 2, 0, 6, 0 },
-                                      { 2, 0, 3, 8, 5 },
-                                      { 0, 3, 0, 0, 7 },
-                                      { 6, 8, 0, 0, 9 },
-                                      { 0, 5, 7, 9, 0} };
+            //int[,] graph = new int[,]{{ 0, 2, 0, 6, 0 },
+            //                          { 2, 0, 3, 8, 5 },
+            //                          { 0, 3, 0, 0, 7 },
+            //                          { 6, 8, 0, 0, 9 },
+            //                          { 0, 5, 7, 9, 0} };
 
-            Prims_MinSpanningTree(graph);
+
+            // Graph can be seen like here: https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/
+            int[,] graph = new int[,]{{ 0, 4, 0, 0, 0, 0, 0, 8, 0 },
+                                      { 4, 0, 8, 0, 0, 0, 0, 11, 0 },
+                                      { 0, 8, 0, 7, 0, 4, 0, 0, 2 },
+                                      { 0, 0, 7, 0, 9, 14, 0, 0, 0 },
+                                      { 0, 0, 0, 9, 0, 10, 0, 0, 0 },
+                                      { 0, 0, 4, 14, 10, 0, 2, 0, 0 },
+                                      { 0, 0, 0, 0, 0, 2, 0, 1, 6 },
+                                      { 8, 11, 0, 0, 0, 0, 1, 0, 7 },
+                                      { 0, 0, 2, 0, 0, 0, 6, 7, 0 }};
+
+            // OUTPUT FOR ABOVE EXAMPLE
+            /* 
+             * 0 - 1 = 4
+             * 1 - 2 = 8
+             * 2 - 3 = 7
+             * 2 - 8 = 2
+             * 2 - 5 = 4
+             * 3 - 4 = 9
+             * 5 - 6 = 2
+             * 6 - 7 = 1             
+             */
+
+            Prims_MinSpanningTree_AdjacencyArrays(graph);
         }
 
-        public void Prims_MinSpanningTree(int[,] graph)
+        public void Prims_MinSpanningTree_AdjacencyArrays(int[,] graph)
         {
             // As we know the lenght of the 2D matrix gives the no of vertices(rows/Columns)
             // matrix values denotes the weights of the edges
@@ -71,6 +113,8 @@ namespace PreperationsTest.Algorithms.DivideAndConquer
 
         /// <summary>
         /// To find the vertex with minimum key value, from the set of vertices not yet included in MST
+        /// For 0 - 8 (let say we have 9x9 matrix)
+        ///     check for each v, key[v] < minValue (intially minValue is int.MaxValue)
         /// </summary>
         /// <param name="graph"></param>
         /// <returns></returns>
