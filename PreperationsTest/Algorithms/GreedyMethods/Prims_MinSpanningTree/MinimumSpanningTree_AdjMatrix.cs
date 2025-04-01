@@ -22,10 +22,10 @@
  *          we consider the minValue as that value and minIndex that index. If found at col2, still we iterate till col-8 and we dont know if we can find at col8 also
  **/
 
-namespace PreperationsTest.Algorithms.DivideAndConquer
+namespace PreperationsTest.Algorithms.GreedyMethods.Prims_MinSpanningTree
 {
     [TestClass]
-    public class MinimumSpanningTree_Prim_s
+    public class MinimumSpanningTree_AdjMatrix
     {
 
         [TestMethod]
@@ -109,6 +109,8 @@ namespace PreperationsTest.Algorithms.DivideAndConquer
                     }
                 }
             }
+
+            // Iterate Key[] and add the result and return, which will be the MST value
         }
 
         /// <summary>
