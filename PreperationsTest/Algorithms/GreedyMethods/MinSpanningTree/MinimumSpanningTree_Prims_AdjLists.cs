@@ -21,7 +21,7 @@
 namespace PreperationsTest.Algorithms.GreedyMethods.Prims_MinSpanningTree
 {
     [TestClass]
-    public class MinimumSpanningTree_AdjLists
+    public class MinimumSpanningTree_Prims_AdjLists
     {
         [TestMethod]
         public void Run()
