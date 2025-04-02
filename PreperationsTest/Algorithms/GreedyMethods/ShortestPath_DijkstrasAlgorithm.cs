@@ -127,12 +127,12 @@ namespace PreperationsTest.Algorithms.GreedyMethods
                         break;
 
                     if (rightIndex <= lastIndex &&
-                        _compare(_data[rightIndex], _data[leftIndex]) < 0) // compare right & left, use left variable
+                        _compare(_data[rightIndex], _data[leftIndex]) < 0) // compare right & left, right>left, then use left variable for using right
                     {
                         leftIndex = rightIndex;
                     }
 
-                    if (_compare(_data[parentIndex], _data[rightIndex]) <= 0)  // right < parent, swap
+                    if (_compare(_data[parentIndex], _data[rightIndex]) <= 0)  // Comparer(a,b) < means a > b; 
                         break;
                     Swap(parentIndex, rightIndex);
                     parentIndex = rightIndex;

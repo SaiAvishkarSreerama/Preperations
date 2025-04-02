@@ -17,7 +17,7 @@ namespace PreperationsTest.Algorithms.GreedyMethods
         [TestMethod]
         public void Run()
         {
-            int[] denominations = { 5, 2, 10, 1 };
+            int[] denominations = { 5, 2, 10,  };
             int amount = 34;
 
             int minCoins = MinCoins(denominations, amount);
