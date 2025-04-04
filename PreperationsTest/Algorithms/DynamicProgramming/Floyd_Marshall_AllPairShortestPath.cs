@@ -19,7 +19,7 @@
 namespace PreperationsTest.Algorithms.DynamicProgramming
 {
     [TestClass]
-    public class Floyd_Marshall_ShortestPathToAllVertices
+    public class Floyd_Marshall_AllPairShortestPath
     {
         [TestMethod]
         public void Run()
