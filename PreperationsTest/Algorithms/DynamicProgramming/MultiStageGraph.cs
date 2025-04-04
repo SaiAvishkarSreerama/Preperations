@@ -35,7 +35,7 @@ namespace PreperationsTest.Algorithms.DynamicProgramming
 
             // Get the path from stage-1 to stagen
             // Here we get [1, 2, 6, 8], means traversing form 1 to n through these nodes gives smallest cost
-            int[] path = MultiStageGraph(graph, vertices, stages);
+            int[] path = MultiStageGraphTest(graph, vertices, stages);
         }
 
         /// <summary>
@@ -61,7 +61,7 @@ namespace PreperationsTest.Algorithms.DynamicProgramming
         /// <param name="v"></param>
         /// <param name="s"></param>
         /// <returns></returns>
-        public int[] MultiStageGraph(int[,] graph, int v, int s)
+        public int[] MultiStageGraphTest(int[,] graph, int v, int s)
         {
             // prepare an adj list for the graph
             List<List<int[]>> adj = new List<List<int[]>>(v);
