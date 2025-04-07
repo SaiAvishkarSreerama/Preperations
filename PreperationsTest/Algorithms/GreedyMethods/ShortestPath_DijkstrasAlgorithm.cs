@@ -6,7 +6,7 @@
  *  4. Iterate pq untill is empty
  *  5. Dequeue the pq, that gives the current Node(let say u), first 0 here
  *  6. Get the connected nodes (v-node) and weight from the graph of u-node
- *  7. If u-node value + weight to vNode < vNode value, then update vNode value with this shortest value, in dist[]
+ *  7. If u-node value + weight to vNode < vNode value, then update vNode value with this shortest value, in dist[] => is called relaxation
  *  8. Enqueue this vnode value, vnode to pq
  *  
  *  Graph Implementation:
