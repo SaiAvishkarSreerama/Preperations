@@ -8,4 +8,8 @@
     <UseVSTest>true</UseVSTest>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="LeetCode\Hard\" />
+  </ItemGroup>
+
 </Project>
