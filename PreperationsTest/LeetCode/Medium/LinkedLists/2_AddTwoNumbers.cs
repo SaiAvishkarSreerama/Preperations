@@ -36,7 +36,8 @@ namespace PreperationsTest.LeetCode.Medium.LinkedLists
             ListNode node6 = new ListNode(6, node4);
             ListNode l2 = new ListNode(5, node6);
 
-            ListNode result =  AddTwoNumbers(l1, l2);
+            ListNode result = AddTwoNumbers(l1, l2);
+            ListNode result1 = AddTwoNumbers_SolFromLeetCode(l1, l2);
         }
         public class ListNode
         {
@@ -106,45 +107,45 @@ namespace PreperationsTest.LeetCode.Medium.LinkedLists
         /// <returns></returns>
         public ListNode AddTwoNumbers_SolFromLeetCode(ListNode l1, ListNode l2)
         {
-            ListNode r = l1;
+            ListNode result = l1;
 
             while (l2 != null)
             {
-
                 l1.val += l2.val;
 
-
-                //if overflows
                 if (l1.val > 9)
                 {
-                    if (l1.next == null)
+                    if(l1.next == null)
+                    {
                         l1.next = new ListNode();
-
+                    }
                     l1.next.val += 1;
                     l1.val = l1.val % 10;
                 }
 
-                //next
-                if (l1.next == null && l2.next != null)
+                if(l1.next == null && l2.next != null)
                 {
                     l1.next = new ListNode();
                 }
                 if (l1.next != null)
+                {
                     l1 = l1.next;
+                }
                 l2 = l2.next;
             }
+
             while (l1.val > 9)
             {
-                if (l1.next == null)
+                if(l1.next == null)
+                {
                     l1.next = new ListNode();
-
+                }
                 l1.next.val += 1;
                 l1.val = l1.val % 10;
                 l1 = l1.next;
             }
 
-
-            return r;
+            return result;
         }
     }
 }
