@@ -19,7 +19,7 @@
 
 using System.Text;
 
-namespace PreperationsTest.LeetCode.Medium.Math
+namespace PreperationsTest.LeetCode.Medium.Maths
 {
     [TestClass]
     public class _7_ReverseInteger
