@@ -3,7 +3,7 @@
  *      '.' Matches any single character
  *      '*' Matches zero or more of the preceding element.
  *      
- *      Example 1:
+ * Example 1:
  * Input: s = "aa", p = "a"
  * Output: false
  * Explanation: "a" does not match the entire string "aa".
@@ -25,7 +25,7 @@
 namespace PreperationsTest.LeetCode.Hard.String
 {
     [TestClass]
-    public class _9_RegularExpressionMatching
+    public class _10_RegularExpressionMatching
     {
         [TestMethod]
         public void Run()

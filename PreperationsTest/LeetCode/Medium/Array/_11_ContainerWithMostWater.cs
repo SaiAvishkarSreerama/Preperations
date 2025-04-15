@@ -22,7 +22,7 @@
 namespace PreperationsTest.LeetCode.Medium.Array
 {
     [TestClass]
-    public class _10_ContainerWithMostWater
+    public class _11_ContainerWithMostWater
     {
         [TestMethod]
         public void Run()
