@@ -37,7 +37,7 @@ namespace PreperationsTest.LeetCode.Hard.String
         }
 
         /// <summary>
-        /// using dynamic programming Top-Down
+        /// using dynamic programming Bottom-Up(Tabulation) solution with Iteration
         /// Explanation:
         ///     1. Create a dp table [text.Lenght as rows][pattern.Lenght as column]
         ///     2. Fill dp[0,0] = true, as empty text and pattern is matching
