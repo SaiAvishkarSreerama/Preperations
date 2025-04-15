@@ -22,7 +22,7 @@
  * SC - O(mxn)
  */
 
-namespace PreperationsTest.LeetCode.Medium.Strings
+namespace PreperationsTest.LeetCode.Hard.String
 {
     [TestClass]
     public class _9_RegularExpressionMatching
