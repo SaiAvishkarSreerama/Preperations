@@ -107,7 +107,7 @@ namespace PreperationsTest.LeetCode.Easy.Maths
             for (int i = s.Length - 1; i >= 0; i--)
             {
                 int current = romanToIntDict[s[i]]; 
-                result += current > previous ? current : -1 * current;
+                result += current >= previous ? current : -1 * current;
                 previous = current;
             }
 
