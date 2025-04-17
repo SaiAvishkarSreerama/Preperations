@@ -19,7 +19,7 @@
  * Output: 1
 */
 
-namespace PreperationsTest.LeetCode.Medium.Array
+namespace PreperationsTest.LeetCode.Medium.Arrays
 {
     [TestClass]
     public class _11_ContainerWithMostWater

@@ -13,7 +13,7 @@
 * Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 * */
 
-namespace PreperationsTest.LeetCode.Hard.Array
+namespace PreperationsTest.LeetCode.Hard.Arrays
 {
     [TestClass]
     public class _4_MedianOfTwoSortedArrays

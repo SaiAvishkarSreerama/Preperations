@@ -22,7 +22,7 @@
 * Input: nums = [3,3], target = 6
 * Output: [0,1]
 */
-namespace PreperationsTest.LeetCode.Easy.Array
+namespace PreperationsTest.LeetCode.Easy.Arrays
 {
     [TestClass]
     public class _1_TwoSum
