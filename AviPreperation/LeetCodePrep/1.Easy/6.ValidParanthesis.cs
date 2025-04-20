@@ -1,11 +1,11 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Text;
 
 namespace AviPreperation.LeetCodePrep._1.Easy
 {
     public class Solution
     {
+        #region My Solution
         //Time Complexity - O(n) - we traverse all charactersof a string only once
         //Space Complexity - O(n) - we used stack to push, pop hte string characters
         public bool IsValid(string s)
@@ -39,5 +39,6 @@ namespace AviPreperation.LeetCodePrep._1.Easy
 
             return stack.Count == 0 ? true : false;
         }
+        #endregion
     }
 }
