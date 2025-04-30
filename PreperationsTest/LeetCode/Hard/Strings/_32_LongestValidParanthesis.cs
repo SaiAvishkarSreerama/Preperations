@@ -19,6 +19,8 @@
  * s[i] is '(', or ')'.
 */
 
+using System.Diagnostics.Metrics;
+
 namespace PreperationsTest.LeetCode.Hard.Strings
 {
     [TestClass]
@@ -27,8 +29,8 @@ namespace PreperationsTest.LeetCode.Hard.Strings
         [TestMethod]
         public void Run()
         {
-            string s = ")((((()()()()()))))))))";
-            int maxLength = LongestValidParentheses(s);
+            string s = "())((())";
+            int maxLength = LongestValidParentheses1(s);
         }
 
         /// <summary>
@@ -66,6 +68,65 @@ namespace PreperationsTest.LeetCode.Hard.Strings
                     }
                     maxLength = Math.Max(maxLength, i - stack.Peek());
                 }
+            }
+
+            return maxLength;
+        }
+
+        /// <summary>
+        ///  TWO PASS
+        ///  Explanation:
+        ///     1. In first pass traverse from i=0 to n, it ensures the sequence like (() but misses ())
+        ///         i. when open encounters '(' - open++
+        ///         ii. When close encounters ')' - close++
+        ///         ii. When open==close, get the max lenght of 2*open or 2*close
+        ///         iv. since coming from front, when close ')' are high means we set zeros and increment from that
+        ///     2. Same but traverse from i=n to 0 this time, it ensures the sequence like ()) but misses (()
+        ///         iv. since coming from back, when open '(' are high means they came first, which we need to discard, so set to zeros
+        ///     
+        /// Why Two passes?
+        /// Left to Right Pass: This pass ensures that sequences where the number of close parentheses might exceed the number of open parentheses are considered. For example, 
+        ///     in the sequence ()), the first pass will reset the counts after encountering the second close parenthesis.
+        /// Right to Left Pass: This pass ensures that sequences where the number of open parentheses might exceed the number of close parentheses are considered.For example, 
+        ///     in the sequence ((), the second pass will reset the counts after encountering the second open parenthesis.
+        /// Ex: ( ) ( ( ( ) ) , 
+        ///     first pass ( ), calculates maxLenght, but ( ( ( ) ), open-3,close-2 fails to calculate (()) in it.
+        ///     seconf pass ( (()), close-2, open-2, calculates length
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        public int LongestValidParentheses1(string s)
+        {
+            int open = 0;
+            int close = 0;
+            int maxLength = 0;
+
+            // ====>
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == '(')
+                    open++;
+                else
+                    close++;
+
+                if (open == close)
+                    maxLength = Math.Max(maxLength, 2 * open);
+                else if (close > open)
+                    open = close = 0;
+            }
+            open = close = 0;
+            // <====
+            for (int i = s.Length - 1; i >= 0; i--)
+            {
+                if (s[i] == '(')
+                    open++;
+                else
+                    close++;
+
+                if (open == close)
+                    maxLength = Math.Max(maxLength, 2 * open);
+                else if (open > close)
+                    open = close = 0;
             }
 
             return maxLength;
