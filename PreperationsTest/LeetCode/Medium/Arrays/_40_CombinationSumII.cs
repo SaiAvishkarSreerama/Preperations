@@ -24,8 +24,8 @@ namespace PreperationsTest.LeetCode.Medium.Arrays
         [TestMethod]
         public void Run()
         {
-            int[] nums = { 2, 3, 6, 7 };
-            IList<IList<int>> result = CombinationSum2(nums, 7);
+            int[] nums = { 10, 1, 2, 7, 6, 1, 5 };
+            IList<IList<int>> result = CombinationSum2(nums, 8);
         }
 
         public IList<IList<int>> CombinationSum2(int[] candidates, int target)
