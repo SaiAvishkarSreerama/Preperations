@@ -23,6 +23,7 @@
  * s consists only of printable ASCII characters.
  **/
 
+// Companies: @Meta
 namespace PreperationsTest.LeetCode.Easy.Strings
 {
     [TestClass]
