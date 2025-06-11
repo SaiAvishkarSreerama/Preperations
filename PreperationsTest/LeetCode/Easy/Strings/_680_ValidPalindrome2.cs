@@ -19,6 +19,7 @@
  * s consists of lowercase English letters.
  * */
 
+// Companies: @Meta
 namespace PreperationsTest.LeetCode.Easy.Strings
 {
     [TestClass]
