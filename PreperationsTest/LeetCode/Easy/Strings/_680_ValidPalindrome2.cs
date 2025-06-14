@@ -35,7 +35,7 @@ namespace PreperationsTest.LeetCode.Easy.Strings
         //USING ITERATION
         // TC - O(n), It checks atmost 2 times of extra iteration for the i+1,j or i,j-1
         // SC - O(1)
-        public bool ValidPalindrome(string s)
+        public bool ValidPalindrome_Iteration(string s)
         {
             int i = 0;
             int j = s.Length - 1;
