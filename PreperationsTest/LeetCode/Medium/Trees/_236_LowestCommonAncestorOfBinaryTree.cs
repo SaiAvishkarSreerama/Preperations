@@ -8,7 +8,7 @@
  * Explanation: The LCA of nodes 5 and 1 is 3.
  */
 
-// Companies: @Meta
+// Companies: @Meta @Google @Apple @Microsoft @Amazon
 namespace PreperationsTest.LeetCode.Medium.Trees
 {
     public class TreeNode
