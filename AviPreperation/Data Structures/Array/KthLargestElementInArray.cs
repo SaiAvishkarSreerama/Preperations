@@ -15,6 +15,8 @@ using System.Text;
 * Note:
 * You may assume k is always valid, 1 ≤ k ≤ array's length.
 */
+
+//Companies: @Meta @Google @Apple @MSFT @Amazon
 namespace AviPreperation.Data_Structures.Array
 {
     public class KthLargestElementInArraySolution
