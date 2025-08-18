@@ -51,12 +51,13 @@ namespace PreperationsTest.LeetCode.Medium.Trees
             // node3 is the root of the tree
             TreeNode root = node3;
 
-            TreeNode lca = LowestCommonAncestor(root, node6, node4);
+            TreeNode lca_IT = LowestCommonAncestor_Iteration(root, node6, node4);
+            TreeNode lca_Recursive = LowestCommonAncestor_Recursive(root, node6, node4);
         }
 
         // TC - O(N), traversing all nodes in the iterations
         // SC - O(N), N for stack, N for dictionary and N for Set, total would be 3N~= O(N)
-        public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
+        public TreeNode LowestCommonAncestor_Iteration(TreeNode root, TreeNode p, TreeNode q)
         {
             // traversalStack
             Stack<TreeNode> stack = new Stack<TreeNode>();
@@ -103,5 +104,20 @@ namespace PreperationsTest.LeetCode.Medium.Trees
 
             return q; //here q is the first ancestor we find in set
         }
+
+        public TreeNode LowestCommonAncestor_Recursive(TreeNode root, TreeNode p, TreeNode q)
+        {
+            if (root == null || root == p || root == q) 
+                return root;
+
+            TreeNode left = LowestCommonAncestor_Recursive(root.left, p, q);
+            TreeNode right = LowestCommonAncestor_Recursive(root.right, p, q);
+
+            if (left != null && right != null) 
+                return root;
+
+            return left != null ? left : right;
+        }
+
     }
 }
