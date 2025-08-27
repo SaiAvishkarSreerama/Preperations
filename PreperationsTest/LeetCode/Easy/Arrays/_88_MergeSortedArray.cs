@@ -82,6 +82,9 @@ namespace PreperationsTest.LeetCode.Easy.Arrays
         /// <summary>
         /// TC - O(m+n)
         /// SC - O(1)
+        /// Here nums1 = [4 5 6 0 0 0], m=3. nums1 will have space for both arrays(for inplace)
+        /// nums2 = [1 2 3], n=3
+        /// 
         /// </summary>
         /// <param name="nums1"></param>
         /// <param name="m"></param>
@@ -90,6 +93,7 @@ namespace PreperationsTest.LeetCode.Easy.Arrays
         public void Merge_InPlace(int[] nums1, int m, int[] nums2, int n)
         {
             // In-place replace of nums1
+            // Iterate from backwards
             int i = m - 1;
             int j = n - 1;
             int k = m + n - 1;
@@ -106,6 +110,10 @@ namespace PreperationsTest.LeetCode.Easy.Arrays
                 }
             }
 
+            // We need to verify if the nums2 has still values init
+            // for this example all nums1 are sorted without touching nums2 in the above first loop
+            // nums1 = [4 5 6 0 0 0(i, k)], nums2 = [1 2 3(j)] => nums1[(i)4 5 6(k) 4 5 6] after first loop
+            // second loop will take care of adding nums2 ele, nums1=[1 2 3 4 5 6]
             while (j >= 0)
             {
                 nums1[k--] = nums2[j--];

@@ -108,5 +108,48 @@ namespace PreperationsTest.LeetCode.Medium.Strings
 
             return sb.Length > 0 ? sb.ToString() : "/";
         }
+
+        /// <summary>
+        /// SAME AS ABOVE BUT USING LIST
+        /// TC - O(N), Split take O(n)
+        /// SC - O(N), stack uses O(n), string[] takes O(n), stringBuilder uses O(n)
+        /// </summary>
+        /// <param name="path"></param>
+        public string SimplifyPath_UsingList(string path)
+        {
+            // we need a  list or a stack to store the valid directories
+            List<string> list = new List<string>();
+
+            // split the string based on '/' slash
+            string[] directories = path.Split('/');
+
+            // iterate the comonents and apply rules
+            foreach (string directory in directories)
+            {
+                // '.' rule - continue
+                if (directory == "." || directory == "")
+                {
+                    continue;
+                }
+
+                // ".." parent directory, means we need to remove the top stack value
+                else if (directory == "..")
+                {
+                    if (list.Count != 0)
+                    {
+                        list.RemoveAt(list.Count - 1);
+                    }
+                }
+
+                //for all other values, we consider it as a valid directory
+                else
+                {
+                    list.Add(directory);
+                }
+            }
+
+            // If we use stack, we need to iterate from stack.Reverse() to get the directories
+            return "/" + string.Join("/", list.ToArray());
+        }
     }
 }

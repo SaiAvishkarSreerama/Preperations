@@ -15,6 +15,7 @@
 * It is guaranteed that the answer is unique.
 * */
 
+// Companies: @Meta
 namespace PreperationsTest.LeetCode.Medium.Arrays
 {
     [TestClass]

@@ -22,6 +22,8 @@
 * Input: nums = [3,3], target = 6
 * Output: [0,1]
 */
+
+// Companies: @Meta
 namespace PreperationsTest.LeetCode.Easy.Arrays
 {
     [TestClass]
